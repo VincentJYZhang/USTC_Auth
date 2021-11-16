@@ -73,8 +73,8 @@ auth.auth() # 与服务器建立session
 ## 应用实例
 
 本项目提供了一些简单的应用实例：
-* `example_select_lecture.py`：5行代码实现选学术讲座；
-* `example_get_score.py`：4行代码抓取成绩表。
+* `example_select_lecture.py`：学术讲座选课（5行代码）；
+* `example_get_score.py`：抓取成绩表（4行代码）。
 
 
 ---
