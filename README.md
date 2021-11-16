@@ -1,6 +1,6 @@
 # USTC_Auth
 
-![School](https://img.shields.io/badge/School-URC-blue.svg)
+![School](https://img.shields.io/badge/School-USTC-green.svg)
 ![Language](https://img.shields.io/badge/language-Python3-yellow.svg)
 ![GitHub stars](https://img.shields.io/github/stars/VincentJYZhang/USTC_Auth)
 ![GitHub forks](https://img.shields.io/github/forks/VincentJYZhang/USTC_Auth)
