@@ -1,6 +1,6 @@
 """
-这是个选学术报告的例子
-非常简便，仅作参考
+这个脚本可以选学术报告
+非常简洁方便，仅作参考
 初代版本见：https://github.com/VincentJYZhang/USTC_Lecture/blob/main/lecture_select/lecture_select.py
 """
 
