@@ -17,6 +17,11 @@ USTC统一认证平台的爬虫接口，有效性验证于2021.11。
 
 ## 使用教程
 
+### 环境准备
+
+* Python 3 环境
+* `pip install requests`
+
 
 ### 实例化 `USTC_Auth`
 
