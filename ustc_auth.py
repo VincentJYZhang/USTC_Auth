@@ -15,8 +15,7 @@ from urllib import parse
 from retry import retry
 
 
-
-# 教务网有个问题，他的重定向编码不是utf8，requests库自动解码会出问题
+# USTC的教务网有个问题，他的重定向编码不是utf8，requests库自动解码会出问题
 # 这里将requests库里的重定向函数hook出来重写
 def get_redirect_target(self, resp):
     """hook requests.Session.get_redirect_target method"""
@@ -33,14 +32,13 @@ def patch():
     requests.Session.get_redirect_target = get_redirect_target
 
 
-    
-    
 
 
 class USTC_Auth(object):
     """
     USTC统一身份认证器
     """
+
 
     def __init__(self, user_id, user_pwd, latency = False):
         """
@@ -56,17 +54,17 @@ class USTC_Auth(object):
         if latency:
             self.__session = None
         else:
-            self.__session = auth_session(self.__user_id, self.__user_pwd)
+            self.__session = self.auth_session(self.__user_id, self.__user_pwd)
 
 
-    def get_session():
+    def get_session(self):
         """
         获取与服务器的session对象
         """
         return self.__session
 
 
-    def auth_session(stu_id, pwd):
+    def auth_session(self, stu_id, pwd):
         """与服务器建立SESSION
         """
         
@@ -116,7 +114,7 @@ class USTC_Auth(object):
         return s
 
     
-    def auth():
+    def auth(self):
         """
         进行统一认证，当latency=True时，调用此函数进行认证
         """
@@ -124,17 +122,17 @@ class USTC_Auth(object):
         return None
 
     
-    def get(url, *args, **kwargs):
+    def get(self, url, *args, **kwargs):
         patch()
         return self.__session.get(url, *args, **kwargs)    
     
 
-    def post(url, *args, **kwargs):
+    def post(self, url, *args, **kwargs):
         patch()
         return self.__session.post(url, *args, **kwargs)
 
     
-    def get_with_headers(url, *args, **kwargs):
+    def get_with_headers(self, url, *args, **kwargs):
         """
         因为知道很多人懒得写header，所以提供了一个默认的header，不推荐使用
         """
@@ -155,7 +153,7 @@ class USTC_Auth(object):
 
         return self.__session.get(url, headers = headers, *args, **kwargs)
 
-    def post_with_headers(url, *args, **kwargs):
+    def post_with_headers(self, url, *args, **kwargs):
         """
         因为知道很多人懒得写header，所以提供了一个默认的header，不推荐使用
         """
