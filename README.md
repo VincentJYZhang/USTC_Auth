@@ -20,7 +20,9 @@ USTC统一认证平台的爬虫接口，有效性验证于2021.11。
 
 ### 实例化 `USTC_Auth`
 
-`auth = USTC_Auth(user_id, user_pwd, latency = False)`
+```
+auth = USTC_Auth(user_id, user_pwd, latency = False)
+```
 
 1. 填写学号、密码
 2. `latency`提供延迟认证功能
