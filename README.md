@@ -59,3 +59,12 @@ my_session = auth.get_session()  # 取出session，可以做进一步的扩展
 auth = USTC_Auth('SA21******', '*********', latency = True)  # 填写学号、密码
 auth.auth() # 与服务器建立session
 ```
+
+## 应用实例
+
+`example.py`里提供了一个小例子，可以看到非常简洁易操作。
+
+
+---
+
+方便的话给个Star呗~
