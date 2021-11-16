@@ -9,9 +9,6 @@ Created on Tue Nov 16 19:16:19 2021
 import requests
 from requests._internal_utils import to_native_string
 from requests.compat import is_py3
-from urllib import parse
-
-from retry import retry
 
 
 # USTC的教务网有个问题，他的重定向编码不是utf8，requests库自动解码会出问题
