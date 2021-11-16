@@ -1,4 +1,4 @@
-# USTC_Auth
+# 统一认证登录接口 USTC_Auth
 
 ![School](https://img.shields.io/badge/School-USTC-green.svg)
 ![Language](https://img.shields.io/badge/language-Python3-yellow.svg)
