@@ -1,5 +1,15 @@
 # USTC_Auth
-USTC统一认证平台的爬虫接口，有效性验证于2021.11
+
+![School](https://img.shields.io/badge/School-URC-blue.svg)
+![Language](https://img.shields.io/badge/language-Python3-yellow.svg)
+![GitHub stars](https://img.shields.io/github/stars/VincentJYZhang/USTC_Auth)
+![GitHub forks](https://img.shields.io/github/forks/VincentJYZhang/USTC_Auth)
+
+## 说明
+
+USTC统一认证平台的爬虫接口，有效性验证于2021.11。
+
+**仅供学习交流使用，开发者对使用或不使用本脚本造成的问题不负任何责任。**
 
 ## 使用教程
 
