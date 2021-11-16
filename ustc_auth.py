@@ -9,7 +9,6 @@ Created on Tue Nov 16 19:16:19 2021
 import requests
 from requests._internal_utils import to_native_string
 from requests.compat import is_py3
-import user_config
 from urllib import parse
 
 from retry import retry
