@@ -14,7 +14,7 @@ auth = USTC_Auth('SA21******', '***********')  # 填写学号、密码
 
 url = 'http://yjs.ustc.edu.cn/bgzy/m_bgxk_up.asp'
 
-lecture_id = '1111111111111' # 学术报告的编号
+lecture_id = '555' # 学术报告的编号
 
 # 生成urlencode的post data格式
 form_data = parse.urlencode({"selectxh": int(lecture_id), "select": "true"})
