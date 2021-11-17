@@ -1,8 +1,15 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Nov 16 19:16:19 2021
+USTC_Auth
+统一认证平台的爬虫接口，有效性验证于2021.11。
 
-@author: zhang
+
+======================
+
+仅供学习交流使用，开发者对使用或不使用本脚本造成的问题不负任何责任。
+
+source: https://github.com/VincentJYZhang/USTC_Auth
+Tue Nov 16 2021
 """
 
 
@@ -175,5 +182,5 @@ class USTC_Auth(object):
 if __name__ == "__main__":
 
     auth = USTC_Auth('SA21******', '*********')
-    auth.get('xxx.xxx.xxx')
+    r = auth.get('xxx.xxx.xxx')
     
