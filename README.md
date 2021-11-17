@@ -11,7 +11,13 @@ USTC统一认证平台的爬虫接口，有效性验证于2021.11。
 
 抓取数据就像请求普通网站一样，自动进行登录验证，帮助开发者 Focus on 这个网页本身，而不需要考虑验证等繁杂步骤。
 
-[应用实例](https://github.com/VincentJYZhang/USTC_Auth#%E5%BA%94%E7%94%A8%E5%AE%9E%E4%BE%8B) 里已有4、5行代码实现抓取成绩单、选学术讲座、获取一卡通信息等。
+### 支持应用
+
+在本项目的支持下，提供了一些简单的应用实例：
+* `example_select_lecture.py`：学术讲座选课（5行代码）。
+* `example_get_score.py`：抓取成绩表（3行代码）。
+* `example_ecard.py`：抓取一卡通信息（3行代码）。
+* `example_tickets.py`：查看东区大礼堂上映电影的情况。
 
 **仅供学习交流使用，开发者对使用或不使用本脚本造成的问题不负任何责任。**
 
@@ -93,11 +99,6 @@ auth.auth() # 与服务器建立session
 ```
 
 ## 应用实例
-
-本项目提供了一些简单的应用实例：
-* `example_select_lecture.py`：学术讲座选课（5行代码）；
-* `example_get_score.py`：抓取成绩表（3行代码）。
-* `example_ecard.py`：抓取一卡通信息。
 
 下面以`example_get_score.py`抓取成绩表为例：
 ```
